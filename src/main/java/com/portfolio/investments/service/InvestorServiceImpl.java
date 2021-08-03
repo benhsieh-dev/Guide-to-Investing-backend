@@ -5,6 +5,8 @@ import com.portfolio.investments.repository.InvestorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class InvestorServiceImpl implements InvestorService {
 
@@ -14,5 +16,10 @@ public class InvestorServiceImpl implements InvestorService {
     @Override
     public Investor saveInvestor(Investor investor) {
         return investorRepository.save(investor);
+    }
+
+    @Override
+    public List<Investor> getAllInvestors() {
+        return investorRepository.findAll();
     }
 }
