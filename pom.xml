@@ -12,11 +12,15 @@
 	<artifactId>investments</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>investments</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Spring Boot Backend for Guide to Investment App</description>
 	<properties>
 		<java.version>11</java.version>
 		<drools-version>7.15.0.Final</drools-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+<!--		<kie.version>6.1.0.Final</kie.version>-->
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -38,21 +42,28 @@
 			<scope>test</scope>
 		</dependency>
 
+<!--		<dependency>-->
+<!--			<groupId>org.drools</groupId>-->
+<!--			<artifactId>drools-decisiontables</artifactId>-->
+<!--			<version>${drools-version}</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.drools</groupId>-->
+<!--			<artifactId>drools-core</artifactId>-->
+<!--			<version>${drools-version}</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.drools</groupId>-->
+<!--			<artifactId>drools-compiler</artifactId>-->
+<!--			<version>${drools-version}</version>-->
+<!--		</dependency>-->
+
 		<dependency>
-			<groupId>org.drools</groupId>
-			<artifactId>drools-decisiontables</artifactId>
-			<version>${drools-version}</version>
+			<groupId>org.kie</groupId>
+			<artifactId>kie-ci</artifactId>
+			<version>7.15.0.Final</version>
 		</dependency>
-		<dependency>
-			<groupId>org.drools</groupId>
-			<artifactId>drools-core</artifactId>
-			<version>${drools-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.drools</groupId>
-			<artifactId>drools-compiler</artifactId>
-			<version>${drools-version}</version>
-		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -60,6 +71,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>2.5.3</version>
 			</plugin>
 		</plugins>
 	</build>

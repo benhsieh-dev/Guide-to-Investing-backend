@@ -1,0 +1,11 @@
+package rules
+
+rule
+    when
+    then
+    end
+
+rule
+    when
+    then
+    end
